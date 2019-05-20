@@ -1,0 +1,46 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  value : 9.99
+  datetime: 2019-05-17 13:28:54
+  sector: MyString
+
+two:
+  value: 19.99
+  datetime: 2019-05-17 13:28:54
+  sector: MyString
+
+three:
+  value: 29.99
+  datetime: 2019-05-17 13:28:54
+  sector: MyString
+
+four:
+  value: 34.26
+  datetime: 2019-05-17 13:28:54
+  sector: MyString
+
+five:
+  value: 66.23
+  datetime: 2019-05-17 13:28:54
+  sector: MyString
+
+six:
+  value: 45.
+  datetime: 2019-05-17 13:28:54
+  sector: MyString
+
+seven:
+  value: 9.99
+  datetime: 2019-05-17 13:28:54
+  sector: MyString
+
+eight:
+  value: 9.99
+  datetime: 2019-05-17 13:28:54
+  sector: MyString
+
+nine:
+  value: 9.99
+  datetime: 2019-05-17 13:28:54
+  sector: MyString

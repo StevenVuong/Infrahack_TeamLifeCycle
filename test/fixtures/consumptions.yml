@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  time: 2019-05-17 12:10:30
+  consumption: 1
+  vehicle: one
+
+two:
+  time: 2019-05-17 12:10:30
+  consumption: 1
+  vehicle: two
+
+three:
+  time: 2019-05-17 13:10:30
+  consumption: 3
+  vehicle: one
+
+four:
+  time: 2019-05-17 14:10:30
+  consumption: 4
+  vehicle: one
+
+five:
+  time: 2019-05-17 15:10:30
+  consumption: 5
+  vehicle: one
+
+six:
+  time: 2019-05-17 16:10:30
+  consumption: 6
+  vehicle: one
+
+seven:
+  time: 2019-05-17 17:10:30
+  consumption: 3
+  vehicle: one
+
+eight:
+  time: 2019-05-17 18:10:30
+  consumption: 0
+  vehicle: one

@@ -1,0 +1,9 @@
+mosek
+Werkzeug
+flask
+numpy
+json
+scipy
+pystan
+fbprophet
+pickle

@@ -1,0 +1,2 @@
+class PricePrediction < ApplicationRecord
+end

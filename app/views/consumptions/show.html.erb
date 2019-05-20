@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @consumption.time %>
+</p>
+
+<p>
+  <strong>Consumption:</strong>
+  <%= @consumption.consumption %>
+</p>
+
+<p>
+  <strong>Vehicle:</strong>
+  <%= @consumption.vehicle %>
+</p>
+
+<%= link_to 'Edit', edit_consumption_path(@consumption) %> |
+<%= link_to 'Back', consumptions_path %>

@@ -1,0 +1,17 @@
+<%= form_with(model: overview, local: true) do |form| %>
+  <% if overview.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(overview.errors.count, "error") %> prohibited this overview from being saved:</h2>
+
+      <ul>
+      <% overview.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

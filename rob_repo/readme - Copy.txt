@@ -1,0 +1,1 @@
+Install mosek packages from web, and move mosek folder (which contains the license) into home directory.

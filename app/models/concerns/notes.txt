@@ -1,0 +1,18 @@
+** Graphs we want in the App 
+
+
+## Smart graph vs not smart 
+    - Total demand  with and without smart 
+        - Demand curve without lifecycle
+        - Demand curve with lifecycle
+
+    - Total Number of KWH saved today!
+
+    - Total number of cars Charging
+
+    - Total number of cars discharging
+
+    - Geography of charging points
+
+
+

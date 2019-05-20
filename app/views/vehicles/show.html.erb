@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @vehicle.name %>
+</p>
+
+<p>
+  <strong>Owner:</strong>
+  <%= @vehicle.owner %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @vehicle.address %>
+</p>
+
+<p>
+  <strong>Charging sector:</strong>
+  <%= @vehicle.charging_sector %>
+</p>
+
+<p>
+  <strong>Battery capacity:</strong>
+  <%= @vehicle.battery_capacity %>
+</p>
+
+<%= link_to 'Edit', edit_vehicle_path(@vehicle) %> |
+<%= link_to 'Back', vehicles_path %>

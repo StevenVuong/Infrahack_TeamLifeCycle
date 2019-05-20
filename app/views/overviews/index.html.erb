@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+
+<div class="application_container">
+    <div class="container-fluid">
+        <div class="row">
+            <h2> Predicted Demand for the next 24 hours</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="chart-container" style="position: relative; height:60%; width:95%">
+                    <canvas id="consumeChart"></canvas>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="chart-container" style="position: relative; height:60%; width:95%">
+                    <canvas id="chargeChart"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-1-12">
+                <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Total KwH Saving Today</h3>
+                    <h1 class="card-text">123</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-xs-1-12">
+                <div class="card">
+                <div class="card-body">
+                    <h3 class="card-title">Car Charging</h3>
+                    <p class="card-text">Text</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+var data = <%= raw @data.to_json %>;
+var demandData = <%= raw @demand.to_json %>;
+var lifeCycleData = <%= raw @lifecycleConsumption.to_json %>;
+var lifeData = lifeCycleData.map(lf => lf.consumption);
+var dataPoints = data.map(dt => dt.consumption);
+var xAxis = data.map(dt => dt.time.substr(11,8)).filter((i,idx) => idx%2 == 0 );;
+var demandXAxis = demandData.map(dt => dt.datetime);
+var demandDataPoints = demandData.map(dt => Number(dt.value)).filter((i,idx) => idx%2 == 0 );
+var consumeChart;
+var demandChart;
+var chargeChart;
+createLineChart2('consumeChart', xAxis, dataPoints, lifeData, (chart) => consumeChart = chart);
+createDoughnutChart('chargeChart', 35,65, (chart) => chargeChart = chart);
+
+</script>
+
+<br>

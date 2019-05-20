@@ -1,0 +1,33 @@
+<%= form_with(model: consumption, local: true) do |form| %>
+  <% if consumption.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(consumption.errors.count, "error") %> prohibited this consumption from being saved:</h2>
+
+      <ul>
+      <% consumption.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :time %>
+    <%= form.datetime_select :time, id: :consumption_time %>
+  </div>
+
+  <div class="field">
+    <%= form.label :consumption %>
+    <%= form.number_field :consumption, id: :consumption_consumption %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vehicle_id %>
+    <%= form.collection_select :vehicle_id, Vehicle.all ,:id, :name %>
+
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

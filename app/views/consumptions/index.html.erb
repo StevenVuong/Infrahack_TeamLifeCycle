@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Consumptions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Consumption</th>
+      <th>Vehicle</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @consumptions.each do |consumption| %>
+      <tr>
+        <td><%= consumption.time %></td>
+        <td><%= consumption.consumption %></td>
+        <td><%= consumption.vehicle %></td>
+        <td><%= link_to 'Show', consumption %></td>
+        <td><%= link_to 'Edit', edit_consumption_path(consumption) %></td>
+        <td><%= link_to 'Destroy', consumption, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Consumption', new_consumption_path %>

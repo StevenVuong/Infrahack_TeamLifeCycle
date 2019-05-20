@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  price: 9.99
+  datetime: 2019-05-17 13:28:33
+  sector: MyString
+
+two:
+  price: 9.99
+  datetime: 2019-05-17 13:28:33
+  sector: MyString
